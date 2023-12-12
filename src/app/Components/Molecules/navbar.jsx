@@ -43,9 +43,6 @@ const Navbar = () => {
                                 </Link>
                             </li>
                         ))}
-                        <li >
-                            
-                        </li>
                     </ul>
                     <Link href="/">
                         <div className="md:bg-orange-500 text-white px-4 py-2 md:hover:bg-orange-600 rounded-full cursor-pointer">Subscribe</div>
@@ -61,16 +58,12 @@ const Navbar = () => {
             </div>
             <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-white shadow-md py-4`}>
                 <ul className="px-4">
-                    {links.map((link) => (
-                        <div className=''>
-                        <li key={link.href} className="mb-2">
-                            
+                    {links.map((link, index) => (
+                        <li key={link.href + index} className="mb-2">
                             <Link href={link.href}>
                                 <div className={`text-black text-center hover:text-wave-accent underline-animation cursor-pointer ${isActive(link.href) ? 'text-gray-700' : ''}`}>{link.label}</div>
                             </Link>
                         </li>
-                        
-                        </div>
                     ))}
                     <li>
                         <Link href="/">
