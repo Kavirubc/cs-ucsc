@@ -17,11 +17,47 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}
+
+.underline-animation::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width .3s;
+}
+
+
+/* Mobile menu button styles */
+.mobile-menu-button {
+  display: none;
+  /* Your button styling here */
+}
+
+/* Styles for menu items */
+.menu {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .menu {
+    transform: translateY(-100%);
+  }
+
+  .menu.open {
+    transform: translateY(0);
+  }
+
+  /* Adjust menu and other element styles for mobile */
 }
