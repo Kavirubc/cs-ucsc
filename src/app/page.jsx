@@ -8,7 +8,9 @@ export default function Main() {
      
       <div style={{ minHeight: 'calc(100vh - 100px)' }}>
         <HeroSec />
+        
       </div>
+    
       
     </>
   );
