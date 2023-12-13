@@ -17,7 +17,7 @@
 }
 
 body {
-  
+  font-family: 'Poppins';
 }
 
 .underline-animation:hover::after {
@@ -60,4 +60,25 @@ body {
   }
 
   /* Adjust menu and other element styles for mobile */
+}
+
+/* Add this within your global styles or a CSS module */
+.transition-opacity {
+  transition: opacity 300ms ease-in-out;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.translate-x-0 {
+  transform: translateX(0);
+}
+
+.translate-x-full {
+  transform: translateX(100%);
 }

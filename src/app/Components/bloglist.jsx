@@ -3,11 +3,19 @@ import Blogtile from './Molecules/blogtile'
 
 function Bloglist() {
   return (
-    <div className='flex flex-col items-center content-center space-y-4'>
+    <div className='flex flex-col items-center'>
      <Blogtile />
-          <Blogtile />
-          <Blogtile />
-          <Blogtile />
+      <Blogtile />
+      <Blogtile />
+      <Blogtile />
+      <Blogtile />
+      <Blogtile />
+      <Blogtile />
+      <Blogtile />
+      <Blogtile />
+      <Blogtile />
+      <Blogtile />
+      <Blogtile />
     </div>
   )
 }
