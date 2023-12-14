@@ -1,23 +1,25 @@
 import React from 'react';
 
-
 const HeroSec = () => {
     return (
-        <div className="bg-black">
+        <div
+            className="bg-cover bg-center opacity-90"
+            style={{ backgroundImage: `url('https://test1.ko-de.org/bg.jpg')` }}
+        >
             <div className="container mx-auto py-32 px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
-                    <h1 className="text-4xl font-bold text-white">Welcome Blog</h1>
+                    <h1 className="text-4xl font-bold text-white ">Welcome Blog</h1>
                     <p className="mt-4 text-lg text-white">Blog of IEEE UCSC CS Chapter</p>
-                    <a href="https://ghost.org" className="mt-8 inline-block bg-white text-black py-2 px-4 rounded-lg font-semibold hover:text-white hover:bg-orange-500">IEEE CS chapter</a>
-                    
+                    <a
+                        href="https://ghost.org"
+                        className="mt-8 inline-block bg-white text-black py-2 px-4 rounded-lg font-semibold hover:text-white hover:bg-orange-500"
+                    >
+                        IEEE CS chapter
+                    </a>
                 </div>
             </div>
-            
-            
         </div>
     );
 };
-
-
 
 export default HeroSec;
