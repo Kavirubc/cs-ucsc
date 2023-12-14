@@ -1,12 +1,12 @@
 import React from 'react';
 import Blogtile from './Molecules/blogtile';
-import {blogs} from './Data';
+import { blogs } from './Data';
 
 function Bloglist() {
   return (
     <div className='flex flex-col items-center group '>
-      {blogs.map((blog) => (
-        <div className='group-hover:scale-[0.95] group-hover:hover:scale-105 transition duration-200 ease-in-out'>
+      {blogs.map((blog,id) => (
+        <div key={id} className='group-hover:scale-[0.95] group-hover:hover:scale-105 transition duration-200 ease-in-out'>
           <Blogtile
             title={blog.title}
             desc={blog.desc}
