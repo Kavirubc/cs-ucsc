@@ -2,8 +2,9 @@ import React from 'react';
 
 const Blogtile = (props) => {
     return (
-        <div className="flex flex-col md:flex-row max-w-full bg-white shadow-lg my-8 rounded-lg overflow-hidden md:max-w-4xl ">
+        <div className="flex flex-col md:flex-row  w-96 md:w-auto bg-white shadow-lg my-8 rounded-lg overflow-hidden md:max-w-4xl ">
             <div className="md:w-1/3 flex">
+                {/* Make image prop and update the Data.js with an iage url*/}
                 <img src="https://test1.ko-de.org/test.png" alt="Blog" className="object-cover w-full h-48 md:h-auto md:rounded-l-lg" />
             </div>
             <div className="w-full md:w-2/3 p-4">
