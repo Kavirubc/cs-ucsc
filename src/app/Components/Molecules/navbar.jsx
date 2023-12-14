@@ -8,8 +8,8 @@ const Navbar = () => {
     const [activePath, setActivePath] = useState('');
 
     const links = [
+        { label: "All", href: "/blog" },
         { label: "About", href: "/about" },
-        { label: "Blog", href: "/blog" },
         { label: "Contact", href: "/contact" },
     ];
 
@@ -35,10 +35,11 @@ const Navbar = () => {
                 <ul className="hidden md:flex space-x-6 items-center content-center">
                     {links.map((link) => (
                         
-                        <li key={link.href} className={isActive(link.href) ? ' bg-slate-300 px-3 py-2 rounded-xl' : ''}>
+                        <li key={link.href} className={isActive(link.href) ? ' bg-slate-200 rounded-xl shadow-sm' : ''}>
                             <div className='md:flex items-center content-center '>
                             <Link href={link.href}>
-                                <div className={`text-black underline-animation cursor-pointer ${isActive(link.href) ? 'text-gray-700' : ''}`}>{link.label}</div>
+                                    <div className='px-4'>
+                                        <div className={`text-black flex flex-row justify-center underline-animation cursor-pointer mx-4 max-w-[28px] py-2 ${isActive(link.href) ? 'text-gray-700' : ''}`}>{link.label}</div></div>
                             </Link>
                             </div>
                         </li>

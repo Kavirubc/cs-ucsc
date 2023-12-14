@@ -6,7 +6,7 @@ function Bloglist() {
   return (
     <div className='flex flex-col items-center group '>
       {blogs.map((blog,id) => (
-        <div key={id} className='group-hover:scale-[0.95] group-hover:hover:scale-105 transition duration-200 ease-in-out'>
+        <div key={id} className='group-hover:scale-[1] group-hover:hover:scale-105 transition duration-200 ease-in-out'>
           <Blogtile
             title={blog.title}
             desc={blog.desc}

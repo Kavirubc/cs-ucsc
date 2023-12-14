@@ -12,8 +12,10 @@ export default function Main() {
 
     <>
 
-      <Navbar />
-      <div style={{ minHeight: 'calc(100vh - 100px)' }}>
+      <div className='fixed top-0 w-full z-10'>
+        <Navbar />
+      </div>
+      <div className='mt-[70px]' style={{ minHeight: 'calc(100vh - 100px)' }}>
         <HeroSec />
         
         <div className='container mx-auto mt-8 px-10'>
