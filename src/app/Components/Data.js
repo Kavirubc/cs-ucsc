@@ -49,55 +49,5 @@ export const blogs =
             "date": "2023-12-14",
             "tag1": "Tag1",
             "tag2": "Tag2"
-        },
-        {
-            "id": 6,
-            "title": "Title 6",
-            "desc": "Description 6",
-            "blog": "Blog content 6",
-            "writer": "Writer 6",
-            "date": "2023-12-14",
-            "tag1": "Tag1",
-            "tag2": "Tag2"
-        },
-        {
-            "id": 7,
-            "title": "Title 7",
-            "desc": "Description 7",
-            "blog": "Blog content 7",
-            "writer": "Writer 7",
-            "date": "2023-12-14",
-            "tag1": "Tag1",
-            "tag2": "Tag2"
-        },
-        {
-            "id": 8,
-            "title": "Title 8",
-            "desc": "Description 8",
-            "blog": "Blog content 8",
-            "writer": "Writer 8",
-            "date": "2023-12-14",
-            "tag1": "Tag1",
-            "tag2": "Tag2"
-        },
-        {
-            "id": 9,
-            "title": "Title 9",
-            "desc": "Description 9",
-            "blog": "Blog content 9",
-            "writer": "Writer 9",
-            "date": "2023-12-14",
-            "tag1": "Tag1",
-            "tag2": "Tag2"
-        },
-        {
-            "id": 10,
-            "title": "Title 10",
-            "desc": "Description 10",
-            "blog": "Blog content 10",
-            "writer": "Writer 10",
-            "date": "2023-12-14",
-            "tag1": "Tag1",
-            "tag2": "Tag2"
         }
     ]

@@ -1,4 +1,5 @@
 import HeroSec from './Components/Molecules/herosec';
+import Navbar from './Components/Molecules/navbar';
 import Bloglist from './Components/bloglist';
 import Link from 'next/link';
 
@@ -10,8 +11,8 @@ export default function Main() {
   return (
 
     <>
-  
 
+      <Navbar />
       <div style={{ minHeight: 'calc(100vh - 100px)' }}>
         <HeroSec />
         
