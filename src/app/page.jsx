@@ -1,7 +1,7 @@
 import HeroSec from './Components/Molecules/herosec';
 import Navbar from './Components/Molecules/navbar';
 import Bloglist from './Components/bloglist';
-import Link from 'next/link';
+
 
 
 

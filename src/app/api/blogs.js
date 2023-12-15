@@ -1,3 +1,5 @@
+//This is not in use. Using the schema in the app.js file
+
 import mongoose from "mongoose";
 const blogPostSchema = new mongoose.Schema({
     id: {
