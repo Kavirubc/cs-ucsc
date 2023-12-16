@@ -7,7 +7,7 @@ function page() {
     return (
         <>
             <Navbar />
-            <div style={{ minHeight: 'calc(100vh - 100px)' }}>
+            <div className='mt-[120px]' style={{ minHeight: 'calc(100vh - 100px)' }}>
                 This is contains all the blogs
                 <div>
                     <BloglistAll />

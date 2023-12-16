@@ -12,7 +12,7 @@ export default function Main() {
 
     <>
 
-      <div className='fixed top-0 w-full z-10'>
+      <div className=''>
         <Navbar />
       </div>
       <div className='mt-[70px]' style={{ minHeight: 'calc(100vh - 100px)' }}>

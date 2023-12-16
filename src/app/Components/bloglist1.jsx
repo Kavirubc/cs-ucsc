@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function BloglistAll() {
   return (
-    <div className='flex flex-col items-center group '>
+    <div className='flex flex-col items-center group   '>
       {blogsAll.map((blog, id) => (
         <Link key={id} href={`/blog/${blog.title}`}>
           <div className='group-hover:scale-[1] group-hover:hover:scale-105 transition duration-200 ease-in-out'>
