@@ -16,7 +16,9 @@ export default function Page({ params }) {
 
     return (
         <>
-            <Navbar />
+            
+                <Navbar />
+            
             <div className=" min-h-screen">
                 <div className="py-16 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
