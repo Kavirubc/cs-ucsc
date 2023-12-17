@@ -1,32 +1,22 @@
-"use client";
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+"use client"
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Page = () => {
-    const [posts, setPosts] = useState([]);
+    const goToCreatePage = () => {
+        window.location.href = "admin/create";
+    };
 
-    useEffect(() => {
-        const fetchPosts = async () => {
-            try {
-                const response = await axios.get('/api/posts');
-                setPosts(response.data);
-            } catch (error) {
-                console.error(error);
-            }
-        };
-
-        fetchPosts();
-    }, []);
+    const goToAllPage = () => {
+        window.location.href = "admin/all";
+    };
 
     return (
         <div>
-            <h1>Blog Posts</h1>
-            {posts.map((post) => (
-                <div key={post._id}>
-                    <h2>{post.title}</h2>
-                    <p>{post.content}</p>
-                </div>
-            ))}
+            <h1>Admin Page</h1>
+            <button onClick={goToCreatePage}>Go to Create Page</button>
+            <br />
+            <button onClick={goToAllPage}>Go to All Page</button>
         </div>
     );
 };
