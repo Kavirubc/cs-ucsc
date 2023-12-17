@@ -6,7 +6,7 @@ This blog is built using Next.js, a powerful React framework that allows for ser
 
 ## Owner
 
-- **Owner Name:** Kaviru Hapuarachchi
+- **Kaviru Hapuarachchi**
 - **Contact:** kaviru@ko-de.org
 
 ##Technologies
