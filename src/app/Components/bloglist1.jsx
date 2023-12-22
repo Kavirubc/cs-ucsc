@@ -34,7 +34,7 @@ export default function BloglistAll() {
   return (
     <div className='flex flex-col items-center group'>
       {blogs.map((blog) => (
-        <Link key={blog.id} href={`/blog/${blog.id}`}>
+        <Link key={blog.id} href={`/blog/${blog.title}`}>
           <div className='group-hover:scale-[1] group-hover:hover:scale-105 transition duration-200 ease-in-out'>
             <Blogtile
               title={blog.title}

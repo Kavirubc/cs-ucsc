@@ -11,6 +11,10 @@ async function getBlogPost(blogId) {
 }
 
 export default function Page({ params }) {
+
+    const decodedTitle = decodeURIComponent(params.slug);
+
+
     const [blogPost, setBlogPost] = useState(null);
     const [error, setError] = useState(null);
 
